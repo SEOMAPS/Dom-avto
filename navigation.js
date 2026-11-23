@@ -1,5 +1,6 @@
 const menu = document.querySelector('#site-menu');
 const header = document.querySelector('.site-header');
+const keepHeaderVisible = header.hasAttribute('data-keep-visible');
 const menuToggle = document.querySelector('#menu-toggle');
 const menuClose = menu.querySelector('.menu-close');
 const mobileLayout = matchMedia('(max-width: 780px), (max-width: 1024px) and (pointer: coarse)');
@@ -86,7 +87,7 @@ let lastHeaderScrollY = pageScrollPosition();
 
 function updateMobileHeader() {
   const y = pageScrollPosition();
-  if (!mobileLayout.matches || y <= 8 || menuIsOpen()) {
+  if (keepHeaderVisible || !mobileLayout.matches || y <= 8 || menuIsOpen()) {
     header.classList.remove('is-scrolled-away');
     lastHeaderScrollY = y;
     return;
@@ -117,7 +118,7 @@ window.addEventListener('touchstart', (event) => {
 }, { passive: true });
 
 window.addEventListener('touchmove', (event) => {
-  if (!mobileLayout.matches || menuIsOpen() || !headerTouchPoint || event.touches.length !== 1) return;
+  if (keepHeaderVisible || !mobileLayout.matches || menuIsOpen() || !headerTouchPoint || event.touches.length !== 1) return;
 
   const touch = event.touches[0];
   const horizontal = touch.clientX - headerTouchPoint.clientX;
