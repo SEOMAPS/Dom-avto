@@ -1394,9 +1394,22 @@ html:has(.telegram-dialog[open]) { overflow: hidden; }
 .telegram-person strong { margin-top: 3px; font-size: clamp(.72rem, 3vw, .93rem); line-height: 1.2; }
 .telegram-person-handle { color: var(--muted); font-size: .74rem; line-height: 1.2; }
 
-.route-with-contact { width: 100%; display: grid; justify-items: end; gap: 12px; }
-.route-with-contact > .button { width: min(100%, 424px); }
+ .route-with-contact { width: min(100%, 424px); justify-self: end; display: grid; justify-items: center; gap: 12px; }
+.route-with-contact > .hero-route { width: 100%; margin: 0; }
+.route-with-contact > .button { width: auto; justify-self: center; }
 @media (max-width: 920px) {
-  .route-with-contact:has(.hero-route) { justify-items: start; }
-  .route-with-contact > .button { width: auto; justify-self: start; }
+  .route-with-contact { width: min(100%, 350px); justify-self: start; }
+}
+@media (min-width: 781px) and (max-width: 1150px) {
+  .header-inner { grid-template-columns: auto minmax(0,1fr) auto; gap: 5px; }
+  .header-quick { gap: 3px; }
+  .site-header .brand--lockup { --brand-symbol-size: 48px; --brand-type-size: 100px; }
+}
+@media (max-width: 780px), (max-width: 1024px) and (pointer: coarse) {
+  .header-inner { grid-template-columns: minmax(0,1fr) auto; }
+  .header-controls .header-contact { display: inline-flex; font-size: .76rem; min-height: 36px; padding: 6px 9px; max-width: 10em; text-align: center; line-height: 1.15; }
+  .header-quick { display: flex; justify-content: space-between; gap: 0; }
+  .header-quick a { font-size: clamp(.61rem, 2.7vw, .76rem); }
+  .site-header .brand--lockup { --brand-symbol-size: 42px; --brand-type-size: 92px; gap: 4px; }
+  .site-header .brand-tagline { white-space: normal; font-size: .48rem; }
 }

@@ -7,7 +7,7 @@
   <meta name="description" content="Гиды по покупке авто из Китая, Кореи, Японии и Кыргызстана. Разбор цены под ключ, проверки, аукционного листа и доставки в ваш город.">
   <title>Как купить и привезти авто из-за рубежа — блог «Дом Авто»</title>
   <link rel="icon" href="../assets/dom-icon.svg">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=nav3">
   <script src="../navigation.js" defer></script>
   <script src="../app.js" defer></script>
   <meta property="og:type" content="website">
@@ -30,6 +30,7 @@
         <a class="brand brand--lockup" href="../index.html" aria-label="Дом Авто, на главную"><img class="brand-symbol" src="../assets/dom-brand-symbol.webp" width="550" height="159" alt=""><span class="brand-type"><img class="brand-name" src="../assets/dom-brand-name.webp" width="550" height="80" alt=""><span class="brand-tagline">Подбор и доставка под ключ</span></span></a>
       </div>
       <nav class="header-quick" aria-label="Быстрая навигация">
+        <a href="../index.html">Главная</a>
         <a href="../catalog.html">Каталог</a>
         <a href="../faq.html">FAQ</a>
         <a href="../blog/index.html" aria-current="page">Статьи</a>
@@ -37,7 +38,7 @@
         <a href="../about.html">О нас</a>
       </nav>
       <div class="header-controls">
-        <a class="button button--gold header-contact" href="../catalog.html">Смотреть каталог</a>
+        <a class="button button--gold header-contact" href="https://t.me/DomAvtoOrenburg" data-telegram-cta aria-haspopup="dialog" aria-controls="telegram-dialog">Обсудить подбор</a>
         <a class="menu-button" id="menu-toggle" href="#site-menu" role="button" aria-controls="site-menu" aria-label="Меню"><i aria-hidden="true"></i></a>
       </div>
     </div>
@@ -48,6 +49,7 @@
     <div class="menu-inner" id="menu-panel">
       <div class="menu-top"><h2 id="menu-title">Меню</h2><a class="menu-close" href="#menu-closed" aria-label="Закрыть меню">×</a></div>
       <nav aria-label="Разделы сайта">
+        <a class="menu-page-link" href="../index.html">Главная</a>
         <a class="menu-page-link" href="../catalog.html">Каталог</a>
         <a class="menu-page-link" href="../faq.html">FAQ</a>
         <a class="menu-page-link" href="../blog/index.html" aria-current="page">Статьи</a>
@@ -177,5 +179,37 @@
   </dialog>
 
   <div class="mobile-action"><a class="button button--gold" href="../catalog.html">Смотреть каталог</a></div>
+<dialog class="telegram-dialog" id="telegram-dialog" aria-labelledby="telegram-dialog-title">
+    <div class="telegram-panel">
+      <div class="telegram-panel-heading">
+        <h2 id="telegram-dialog-title">Связаться с «Дом Авто»</h2>
+        <form method="dialog">
+          <button class="button button--ink telegram-close" aria-label="Закрыть" autofocus>×</button>
+        </form>
+      </div>
+      <div class="telegram-channel">
+        <p>Telegram-канал «Дом Авто Оренбург»</p>
+        <a class="button button--gold" href="https://t.me/DomAvtoOrenburg">Открыть канал</a>
+      </div>
+      <ul class="telegram-managers" aria-label="Менеджеры">
+        <li><a class="telegram-person" href="https://t.me/al4_b">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Александр</strong>
+          <span class="telegram-person-handle">@al4_b</span>
+        </a></li>
+        <li><a class="telegram-person" href="https://t.me/msqrad">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Семен</strong>
+          <span class="telegram-person-handle">@msqrad</span>
+        </a></li>
+        <li><a class="telegram-person" href="https://t.me/Orenros">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Иван</strong>
+          <span class="telegram-person-handle">@Orenros</span>
+        </a></li>
+      </ul>
+    </div>
+  </dialog>
+  <script src="../telegram.js" defer></script>
 </body>
 </html>

@@ -116,3 +116,11 @@
 @media (prefers-reduced-motion: reduce) {
   .catalog-light::before { transform: none; transition: none; }
 }
+
+.catalog-specs { margin-block: 8px; padding-block: 8px; border-block: 1px solid var(--line); font-size: .86rem; }
+.catalog-specs p { margin: 0 0 6px; }
+.catalog-specs a { text-decoration: underline; text-underline-offset: .16em; }
+.catalog-specs dl, .catalog-specs dd { margin: 0; }
+.catalog-specs dl > div { display: flex; justify-content: space-between; gap: 8px; }
+.catalog-specs dt { color: var(--muted); }
+.catalog-specs dd { text-align: right; }

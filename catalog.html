@@ -7,9 +7,9 @@
   <meta name="description" content="40 моделей с фильтрами по стране, поиском и сортировкой по цене. Сравните автомобили и запросите расчёт под ключ до своего города.">
   <title>Каталог авто из Китая, Кореи, Японии и Кыргызстана | Дом Авто</title>
   <link rel="icon" href="assets/dom-icon.svg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=nav3">
   <script src="navigation.js" defer></script>
-  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="catalog.css?v=spec1">
   <script src="catalog.js" defer></script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Дом Авто">
@@ -25,6 +25,7 @@
         <a class="brand brand--lockup" href="index.html" aria-label="Дом Авто, на главную"><img class="brand-symbol" src="assets/dom-brand-symbol.webp" width="550" height="159" alt=""><span class="brand-type"><img class="brand-name" src="assets/dom-brand-name.webp" width="550" height="80" alt=""><span class="brand-tagline">Подбор и доставка под ключ</span></span></a>
       </div>
       <nav class="header-quick" aria-label="Быстрая навигация">
+        <a href="index.html">Главная</a>
         <a href="catalog.html" aria-current="page">Каталог</a>
         <a href="faq.html">FAQ</a>
         <a href="blog/index.html">Статьи</a>
@@ -32,7 +33,7 @@
         <a href="about.html">О нас</a>
       </nav>
       <div class="header-controls">
-        <a class="button button--gold header-contact" href="blog/index.html">Читать статьи</a>
+        <a class="button button--gold header-contact" href="https://t.me/DomAvtoOrenburg" data-telegram-cta aria-haspopup="dialog" aria-controls="telegram-dialog">Узнать цену</a>
         <a class="menu-button" id="menu-toggle" href="#site-menu" role="button" aria-controls="site-menu" aria-label="Меню"><i aria-hidden="true"></i></a>
       </div>
     </div>
@@ -43,6 +44,7 @@
     <div class="menu-inner" id="menu-panel">
       <div class="menu-top"><h2 id="menu-title">Меню</h2><a class="menu-close" href="#menu-closed" aria-label="Закрыть меню">×</a></div>
       <nav aria-label="Разделы сайта">
+        <a class="menu-page-link" href="index.html">Главная</a>
         <a class="menu-page-link" href="catalog.html" aria-current="page">Каталог</a>
         <a class="menu-page-link" href="faq.html">FAQ</a>
         <a class="menu-page-link" href="blog/index.html">Статьи</a>
@@ -94,8 +96,9 @@
           <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Honda Vezel" data-price="1660000">
   <img class="catalog-photo" src="assets/catalog/jp-honda-vezel.webp" alt="Honda Vezel у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Япония · Кроссовер</p>
     <h3>Honda Vezel</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.carsensor.net/catalog/honda/vezel/F002/M001G007/">1.5 G</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>118 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 660 000 ₽</p>
     <p class="catalog-card-description">Кроссовер поколения RV из Японии. Сравните бензиновую и гибридную версии по приводу, пробегу и оснащению.</p>
     
@@ -104,8 +107,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota RAV4" data-price="4510000">
   <img class="catalog-photo" src="assets/catalog/kg-toyota-rav4.webp" alt="Toyota RAV4 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2026 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Toyota RAV4</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://toyota.jp/pages/contents/request/webcatalog/rav4/rav4_main_202606.pdf">2.5 HEV E-Four</a></p><dl><div><dt>Год модели</dt><dd>2026</dd></div><div><dt>Мощность</dt><dd>240 л. с. (система)</dd></div><div><dt>Двигатель</dt><dd>Бензиновый гибрид</dd></div></dl></div>
     <p class="catalog-price">≈ 4 510 000 ₽</p>
     <p class="catalog-card-description">Пятиместный кроссовер. При выборе сравните двигатель, привод и комплектацию конкретного RAV4.</p>
     
@@ -114,8 +118,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia K3" data-price="1990000">
   <img class="catalog-photo" src="assets/catalog/kr-kia-k3.webp" alt="Kia K3 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <p class="catalog-card-meta">Южная Корея · Седан</p>
     <h3>Kia K3</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_k3.pdf">1.6 MPI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>123 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 990 000 ₽</p>
     <p class="catalog-card-description">Компактный седан с отдельным багажником. Для ежедневных поездок сравните оснащение салона и состояние машины.</p>
     
@@ -124,8 +129,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Jetta VS7" data-price="1730000">
   <img class="catalog-photo" src="assets/catalog/cn-jetta-vs7.webp" alt="Jetta VS7 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Jetta VS7</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://car.autohome.com.cn/config/spec/62628.html">1.4 TSI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 730 000 ₽</p>
     <p class="catalog-card-description">Пятиместный кроссовер с мотором 1.4 Turbo и автоматом. Если машина нужна для семьи, посмотрите, сколько места на втором ряду.</p>
     
@@ -134,8 +140,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Nissan Note" data-price="1190000">
   <img class="catalog-photo" src="assets/catalog/jp-nissan-note.webp" alt="Nissan Note у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <p class="catalog-card-meta">Япония · Хэтчбек</p>
     <h3>Nissan Note</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://history.nissan.co.jp/ARCHIVES/PDF/NOTE/E13/20231211/note_specsheet.pdf">1.2 e-POWER 2WD</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>116 л. с. (электромотор)</dd></div><div><dt>Двигатель</dt><dd>Бензиновый гибрид</dd></div></dl></div>
     <p class="catalog-price">≈ 1 190 000 ₽</p>
     <p class="catalog-card-description">Городской хэтчбек E13 с гибридной установкой e-POWER. Уточните оснащение и пробег выбранного Note.</p>
     
@@ -144,8 +151,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Honda CR-V" data-price="4350000">
   <img class="catalog-photo" src="assets/catalog/kg-honda-cr-v.webp" alt="Honda CR-V у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2026 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Honda CR-V</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.hondainfocenter.com/2026/CR-V/Feature-Guide/Engine-Chassis-Features/Turbocharged-1-5-liter-Engine-LX-EX-EX-L/">1.5 Turbo (США)</a></p><dl><div><dt>Год модели</dt><dd>2026</dd></div><div><dt>Мощность</dt><dd>193 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 4 350 000 ₽</p>
     <p class="catalog-card-description">Кроссовер шестого поколения. В расчёте версия с мотором 1.5 Turbo и просторным вторым рядом.</p>
     
@@ -154,8 +162,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Sportage" data-price="2600000">
   <img class="catalog-photo" src="assets/catalog/kr-kia-sportage.webp" alt="Kia Sportage у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Kia Sportage</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://autocatalogarchive.com/wp-content/uploads/2023/03/Kia-Sportage-2023-KR.pdf">1.6 T-GDI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>180 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 600 000 ₽</p>
     <p class="catalog-card-description">Кроссовер пятого поколения с вместительным вторым рядом. Перед выбором сравните привод и оснащение.</p>
     
@@ -164,8 +173,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Toyota Yaris L" data-price="1520000">
   <img class="catalog-photo" src="assets/catalog/cn-toyota-yaris-l.webp" alt="Toyota Yaris L у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2022 · Хэтчбек</p>
+    <p class="catalog-card-meta">Китай · Хэтчбек</p>
     <h3>Toyota Yaris L</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://price.pcauto.com.cn/sg9666/config.html">1.5 CVT</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>112 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 520 000 ₽</p>
     <p class="catalog-card-description">Компактный автомобиль с мотором 1.5 и вариатором. Подходит для поиска машины на ежедневные городские поездки.</p>
     
@@ -174,8 +184,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Yaris Cross" data-price="1650000">
   <img class="catalog-photo" src="assets/catalog/jp-toyota-yaris-cross.webp" alt="Toyota Yaris Cross у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Япония · Кроссовер</p>
     <h3>Toyota Yaris Cross</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://toyota.jp/pages/contents/yariscross/001_p_001/pdf/yariscross_spec_202602.pdf">1.5 2WD</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>120 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 650 000 ₽</p>
     <p class="catalog-card-description">Компактный кроссовер на базе Yaris. Можно сравнить бензиновый и гибридный варианты.</p>
     
@@ -184,8 +195,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Audi A5L Sportback" data-price="6390000">
   <img class="catalog-photo" src="assets/catalog/kg-audi-a5l-sportback.webp" alt="Audi A5L Sportback у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2026 · Лифтбек</p>
+    <p class="catalog-card-meta">Кыргызстан · Лифтбек</p>
     <h3>Audi A5L Sportback</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.saic-audi.cn/content/dam/OneWeb/saic_audi/A5L/20260511/20260324-%E5%A5%A5%E8%BF%AAA5L%20sportback%E9%85%8D%E7%BD%AE%E8%A1%A8_2026%E7%84%95%E6%96%B0%E6%AC%BE_1920x1080px.pdf">2.0 TFSI 150 кВт</a></p><dl><div><dt>Год модели</dt><dd>2026</dd></div><div><dt>Мощность</dt><dd>204 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 6 390 000 ₽</p>
     <p class="catalog-card-description">Длиннобазный лифтбек китайского рынка с мотором 2.0 Turbo. Уточните нужные опции по выбранной комплектации.</p>
     
@@ -194,8 +206,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia K5" data-price="2370000">
   <img class="catalog-photo" src="assets/catalog/kr-kia-k5.webp" alt="Kia K5 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <p class="catalog-card-meta">Южная Корея · Седан</p>
     <h3>Kia K5</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/pdf/catalog/catalog_3rdgenk5.pdf">2.0 MPI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>160 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 370 000 ₽</p>
     <p class="catalog-card-description">Среднеразмерный седан с мотором 2.0 и автоматом. При подборе обратите внимание на состояние кузова и оснащение салона.</p>
     
@@ -204,8 +217,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Chevrolet Monza" data-price="1460000">
   <img class="catalog-photo" src="assets/catalog/cn-chevrolet-monza.webp" alt="Chevrolet Monza у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Седан</p>
+    <p class="catalog-card-meta">Китай · Седан</p>
     <h3>Chevrolet Monza</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://en.carmucn.com/features/90301">1.5 DVVT</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>113 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 460 000 ₽</p>
     <p class="catalog-card-description">Седан с атмосферным мотором 1.5 и автоматом. Спокойный вариант для повседневных поездок.</p>
     
@@ -214,8 +228,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Aqua" data-price="1270000">
   <img class="catalog-photo" src="assets/catalog/jp-toyota-aqua.webp" alt="Toyota Aqua у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <p class="catalog-card-meta">Япония · Хэтчбек</p>
     <h3>Toyota Aqua</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://toyota.jp/ucar/catalog/brand-TOYOTA/car-AQUA/202211/10146634/">1.5 Hybrid B 2WD</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>91 л. с. (ДВС)</dd></div><div><dt>Двигатель</dt><dd>Бензиновый гибрид</dd></div></dl></div>
     <p class="catalog-price">≈ 1 270 000 ₽</p>
     <p class="catalog-card-description">Пятидверный гибридный хэтчбек второго поколения. Уточните пробег, комплектацию и доступные материалы осмотра.</p>
     
@@ -224,8 +239,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota Camry" data-price="4320000">
   <img class="catalog-photo" src="assets/catalog/kg-toyota-camry.webp" alt="Toyota Camry у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2025 · Седан</p>
+    <p class="catalog-card-meta">Кыргызстан · Седан</p>
     <h3>Toyota Camry</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.toyota.com/content/dam/toyota/brochures/pdf/2025/my25-camry-ebrochure.pdf">2.5 Hybrid FWD (США)</a></p><dl><div><dt>Год модели</dt><dd>2025</dd></div><div><dt>Мощность</dt><dd>228 л. с. (система)</dd></div><div><dt>Двигатель</dt><dd>Бензиновый гибрид</dd></div></dl></div>
     <p class="catalog-price">≈ 4 320 000 ₽</p>
     <p class="catalog-card-description">Седан XV80 с просторным задним рядом. Можно сравнить гибридные комплектации по оснащению и цене.</p>
     
@@ -234,8 +250,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Kona" data-price="2180000">
   <img class="catalog-photo" src="assets/catalog/kr-hyundai-kona.webp" alt="Hyundai Kona у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Hyundai Kona</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.hyundai.com/content/dam/hyundai/kr/ko/data/vehicles/catalog/en/kona-catalog-eng.pdf">2.0 MPI</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>149 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 180 000 ₽</p>
     <p class="catalog-card-description">Компактный кроссовер первого поколения после рестайлинга. В карточке вариант с мотором 2.0 и вариатором.</p>
     
@@ -244,8 +261,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Haval Chitu" data-price="1590000">
   <img class="catalog-photo" src="assets/catalog/cn-haval-chitu.webp" alt="Haval Chitu у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Haval Chitu</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://pdt.static.globalsources.com/IMAGES/PDT/SPEC/151/K1208141151.pdf">1.5T 135 кВт</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>184 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 590 000 ₽</p>
     <p class="catalog-card-description">Компактный кроссовер с мотором 1.5 Turbo и коробкой DCT. Уточните комплектацию по конкретному автомобилю.</p>
     
@@ -254,8 +272,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Corolla Fielder" data-price="1310000">
   <img class="catalog-photo" src="assets/catalog/jp-toyota-corolla-fielder.webp" alt="Toyota Corolla Fielder у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2021 · Универсал</p>
+    <p class="catalog-card-meta">Япония · Универсал</p>
     <h3>Toyota Corolla Fielder</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://toyota.jp/ucar/catalog/brand-TOYOTA/car-COROLLA_FIELDER/202109/10139911/">1.5 CVT 2WD</a></p><dl><div><dt>Год модели</dt><dd>2021</dd></div><div><dt>Мощность</dt><dd>109 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 310 000 ₽</p>
     <p class="catalog-card-description">Универсал с длинным багажным отделением. Рассмотрите гибридные версии, если важны и расход, и место для вещей.</p>
     
@@ -264,8 +283,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Volkswagen Tiguan L Pro" data-price="4920000">
   <img class="catalog-photo" src="assets/catalog/kg-volkswagen-tiguan-l-pro.webp" alt="Volkswagen Tiguan L Pro у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Volkswagen Tiguan L Pro</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://global.autohome.com.cn/en/detail/60214800">380 TSI 2.0</a></p><dl><div><dt>Год модели</dt><dd>2025</dd></div><div><dt>Мощность</dt><dd>220 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 4 920 000 ₽</p>
     <p class="catalog-card-description">Длиннобазный Tiguan китайского рынка. Расчёт относится к версии с двигателем 2.0 Turbo.</p>
     
@@ -274,8 +294,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Venue" data-price="1750000">
   <img class="catalog-photo" src="assets/catalog/kr-hyundai-venue.webp" alt="Hyundai Venue у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Hyundai Venue</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.hyundai.com/content/dam/hyundai/kr/ko/data/vehicles/catalog/en/venue-catalog-eng.pdf">1.6 MPI</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>123 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 750 000 ₽</p>
     <p class="catalog-card-description">Городской кроссовер с мотором 1.6 и вариатором. Уточните пробег, комплектацию и нужные опции.</p>
     
@@ -284,8 +305,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Škoda Karoq" data-price="2160000">
   <img class="catalog-photo" src="assets/catalog/cn-skoda-karoq.webp" alt="Škoda Karoq у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Škoda Karoq</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.skoda.com.tw/_doc/6fbfee19-39cf-4fde-ae1a-36bf8254634d">1.4 TSI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 160 000 ₽</p>
     <p class="catalog-card-description">Кроссовер с мотором 1.4 Turbo и DSG. При выборе оцените посадку, багажник и оснащение салона.</p>
     
@@ -294,8 +316,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Honda Freed" data-price="1460000">
   <img class="catalog-photo" src="assets/catalog/jp-honda-freed.webp" alt="Honda Freed у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2021 · Минивэн</p>
+    <p class="catalog-card-meta">Япония · Минивэн</p>
     <h3>Honda Freed</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.carsensor.net/catalog/honda/freed/F002/M002G008/">1.5 G 2WD</a></p><dl><div><dt>Год модели</dt><dd>2021</dd></div><div><dt>Мощность</dt><dd>129 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 460 000 ₽</p>
     <p class="catalog-card-description">Компактный минивэн со сдвижными дверями. Для семейных поездок стоит проверить конфигурацию сидений и место для багажа.</p>
     
@@ -304,8 +327,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Škoda Kodiaq" data-price="4490000">
   <img class="catalog-photo" src="assets/catalog/kg-skoda-kodiaq.webp" alt="Škoda Kodiaq у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Škoda Kodiaq</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.skoda-auto.com/_doc/e4c91a49-b6fb-4466-81f7-0909c03c5a63">1.5 TSI mHEV</a></p><dl><div><dt>Год модели</dt><dd>2025</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Мягкий гибрид (бензин)</dd></div></dl></div>
     <p class="catalog-price">≈ 4 490 000 ₽</p>
     <p class="catalog-card-description">Кроссовер второго поколения. Если нужен третий ряд, проверьте комплектации с подходящей конфигурацией салона.</p>
     
@@ -314,8 +338,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Casper" data-price="1630000">
   <img class="catalog-photo" src="assets/catalog/kr-hyundai-casper.webp" alt="Hyundai Casper у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Hyundai Casper</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://autocatalogarchive.com/wp-content/uploads/2023/04/Hyundai-Casper-2023-KR.pdf">1.0 T-GDI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>100 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 630 000 ₽</p>
     <p class="catalog-card-description">Компактная модель с высокой посадкой и литровым турбомотором. Подходит для поиска небольшого автомобиля для города.</p>
     
@@ -324,8 +349,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Volkswagen Tayron" data-price="2170000">
   <img class="catalog-photo" src="assets/catalog/cn-volkswagen-tayron.webp" alt="Volkswagen Tayron у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Volkswagen Tayron</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://xiaoauto.cn/en/catalog/451384766">280 TSI 1.4</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 170 000 ₽</p>
     <p class="catalog-card-description">Пятиместный кроссовер первого поколения. В расчёте версия с двигателем 1.4 Turbo и коробкой DCT.</p>
     
@@ -334,8 +360,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Suzuki Swift" data-price="1170000">
   <img class="catalog-photo" src="assets/catalog/jp-suzuki-swift.webp" alt="Suzuki Swift у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <p class="catalog-card-meta">Япония · Хэтчбек</p>
     <h3>Suzuki Swift</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://gazoo.com/catalog/maker/SUZUKI/SWIFT/201701/10144975/">1.2 XG</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>91 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 170 000 ₽</p>
     <p class="catalog-card-description">Городской хэтчбек с коротким кузовом. При выборе сравните пробег и оснащение выбранных машин.</p>
     
@@ -344,8 +371,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Hyundai Santa Fe" data-price="5050000">
   <img class="catalog-photo" src="assets/catalog/kg-hyundai-santa-fe.webp" alt="Hyundai Santa Fe у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Hyundai Santa Fe</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.hyundai.com/kr/ko/e/vehicles/santafe/intro">2.5 T-GDI</a></p><dl><div><dt>Год модели</dt><dd>2025</dd></div><div><dt>Мощность</dt><dd>281 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 5 050 000 ₽</p>
     <p class="catalog-card-description">Кроссовер поколения MX5 с высоким кузовом и широким багажником. Оцените конфигурацию салона под свои поездки.</p>
     
@@ -354,8 +382,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Elantra" data-price="2110000">
   <img class="catalog-photo" src="assets/catalog/kr-hyundai-elantra.webp" alt="Hyundai Elantra у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <p class="catalog-card-meta">Южная Корея · Седан</p>
     <h3>Hyundai Elantra</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.hyundai.com/kr/ko/brand/brandstory/heritage/2023-the-new-avante">Avante 1.6 MPI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>123 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 110 000 ₽</p>
     <p class="catalog-card-description">Седан поколения CN7. По корейским объявлениям модель можно найти под названием Hyundai Avante.</p>
     
@@ -364,8 +393,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Mazda CX-5" data-price="2350000">
   <img class="catalog-photo" src="assets/catalog/cn-mazda-cx-5.webp" alt="Mazda CX-5 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2024 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Mazda CX-5</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.autohome.com.cn/news/202309/1288805.html?from=m&amp;platform-key=pc">2.0 Skyactiv-G</a></p><dl><div><dt>Год модели</dt><dd>2024</dd></div><div><dt>Мощность</dt><dd>155 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 350 000 ₽</p>
     <p class="catalog-card-description">Кроссовер с атмосферным бензиновым мотором 2.0 и автоматом. Уточните привод, оснащение и состояние кузова.</p>
     
@@ -374,8 +404,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Subaru Forester" data-price="3100000">
   <img class="catalog-photo" src="assets/catalog/jp-subaru-forester.webp" alt="Subaru Forester у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Япония · Кроссовер</p>
     <h3>Subaru Forester</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://ucar.subaru.jp/php/catalog/grade.php?cat_id=10144815">1.8 Turbo Sport</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>177 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 3 100 000 ₽</p>
     <p class="catalog-card-description">Forester поколения SK с полным приводом и высокой посадкой. При выборе сравните комплектации и историю машины.</p>
     
@@ -384,8 +415,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota Highlander" data-price="5200000">
   <img class="catalog-photo" src="assets/catalog/kg-toyota-highlander.webp" alt="Toyota Highlander у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Toyota Highlander</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.toyota.com/content/dam/toyota/brochures/pdf/2024/highlander_ebrochure.pdf">2.4 Turbo (США)</a></p><dl><div><dt>Год модели</dt><dd>2024</dd></div><div><dt>Мощность</dt><dd>269 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 5 200 000 ₽</p>
     <p class="catalog-card-description">Семейный кроссовер XU70 с тремя рядами. Перед подбором стоит оценить место для багажа при поднятом третьем ряду.</p>
     
@@ -394,8 +426,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Seltos" data-price="2250000">
   <img class="catalog-photo" src="assets/catalog/kr-kia-seltos.webp" alt="Kia Seltos у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Kia Seltos</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://autocatalogarchive.com/wp-content/uploads/2023/03/Kia-Seltos-2023-KR.pdf">1.6 T-GDI</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>198 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 250 000 ₽</p>
     <p class="catalog-card-description">Компактный кроссовер после рестайлинга. Сравните версии по приводу, камерам и оснащению салона.</p>
     
@@ -404,8 +437,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Volkswagen Golf" data-price="2120000">
   <img class="catalog-photo" src="assets/catalog/cn-volkswagen-golf.webp" alt="Volkswagen Golf у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Хэтчбек</p>
+    <p class="catalog-card-meta">Китай · Хэтчбек</p>
     <h3>Volkswagen Golf</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://hugeauto.com/used-car/2023-golf-280tsi-dsg-pro-T40422">280 TSI 1.4</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 120 000 ₽</p>
     <p class="catalog-card-description">Пятидверный Golf восьмого поколения. В расчёте версия с двигателем 1.4 Turbo и DSG.</p>
     
@@ -414,8 +448,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Mazda CX-30" data-price="1950000">
   <img class="catalog-photo" src="assets/catalog/jp-mazda-cx-30.webp" alt="Mazda CX-30 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Япония · Кроссовер</p>
     <h3>Mazda CX-30</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.mazda.co.jp/content/dam/mazda/official/mazda-co-jp/cars/cx-30/common/pdf/cx-30_catalog.pdf">1.8 XD</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>130 л. с.</dd></div><div><dt>Двигатель</dt><dd>Дизель</dd></div></dl></div>
     <p class="catalog-price">≈ 1 950 000 ₽</p>
     <p class="catalog-card-description">Компактный кроссовер с низкой линией крыши. Если машина нужна семье, при выборе полезно оценить задний ряд и багажник.</p>
     
@@ -424,8 +459,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Lexus NX 250" data-price="5750000">
   <img class="catalog-photo" src="assets/catalog/kg-lexus-nx-250.webp" alt="Lexus NX 250 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Lexus NX 250</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://toyota.jp/ucar/catalog/brand-LEXUS/car-NX/202402/10152400/">2.5 A25A-FKS</a></p><dl><div><dt>Год модели</dt><dd>2024</dd></div><div><dt>Мощность</dt><dd>201 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 5 750 000 ₽</p>
     <p class="catalog-card-description">Кроссовер второго поколения с атмосферным мотором 2.5. По выбранному авто сверьте привод и опции.</p>
     
@@ -434,8 +470,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Tucson" data-price="2770000">
   <img class="catalog-photo" src="assets/catalog/kr-hyundai-tucson.webp" alt="Hyundai Tucson у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Hyundai Tucson</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://autocatalogarchive.com/wp-content/uploads/2023/03/Hyundai-Tucson-2023-KR.pdf">2.0 CRDi</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>184 л. с.</dd></div><div><dt>Двигатель</dt><dd>Дизель</dd></div></dl></div>
     <p class="catalog-price">≈ 2 770 000 ₽</p>
     <p class="catalog-card-description">Кроссовер поколения NX4 с широким багажным проёмом и просторным вторым рядом. Уточните конкретную комплектацию.</p>
     
@@ -444,8 +481,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Audi Q3" data-price="2240000">
   <img class="catalog-photo" src="assets/catalog/cn-audi-q3.webp" alt="Audi Q3 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <p class="catalog-card-meta">Китай · Кроссовер</p>
     <h3>Audi Q3</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.audi.com.hk/dam/nemo/sea/hk/pdf/specificationsheet_pricelist/Audi_Q3_Specification_Price.pdf">35 TFSI 1.4</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>150 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 2 240 000 ₽</p>
     <p class="catalog-card-description">Кроссовер поколения F3 с мотором 1.4 Turbo и коробкой DCT. При выборе сравните оснащение и состояние машины.</p>
     
@@ -454,8 +492,9 @@
 <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Suzuki Jimny Sierra" data-price="1920000">
   <img class="catalog-photo" src="assets/catalog/jp-suzuki-jimny-sierra.webp" alt="Suzuki Jimny Sierra у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Япония · 2022 · Внедорожник</p>
+    <p class="catalog-card-meta">Япония · Внедорожник</p>
     <h3>Suzuki Jimny Sierra</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://cars-japan.net/engine/mdl0080016.html">1.5 K15B</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>102 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 920 000 ₽</p>
     <p class="catalog-card-description">Трёхдверный рамный внедорожник с мотором 1.5 и подключаемым полным приводом. Уточните состояние конкретной машины.</p>
     
@@ -464,8 +503,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kg" data-model="Geely Monjaro" data-price="3950000">
   <img class="catalog-photo" src="assets/catalog/kg-geely-monjaro.webp" alt="Geely Monjaro у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <p class="catalog-card-meta">Кыргызстан · Кроссовер</p>
     <h3>Geely Monjaro</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://monjaro.ru/attachments/%D0%91%D1%80%D0%BE%D1%88%D1%8E%D1%80%D0%B0-geely-monjaro-2024-pdf.1190/">2.0T AWD</a></p><dl><div><dt>Год модели</dt><dd>2024</dd></div><div><dt>Мощность</dt><dd>238 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 3 950 000 ₽</p>
     <p class="catalog-card-description">Среднеразмерный кроссовер с мотором 2.0 Turbo и автоматом. Перед выбором сравните опции и состояние.</p>
     
@@ -474,8 +514,9 @@
 <article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Sorento" data-price="3600000">
   <img class="catalog-photo" src="assets/catalog/kr-kia-sorento.webp" alt="Kia Sorento у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <p class="catalog-card-meta">Южная Корея · Кроссовер</p>
     <h3>Kia Sorento</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://www.kia.com/content/dam/kwcms/bn/en/pdf/Kia-e-Catalogue-Sorento-MQ4-2022.pdf">2.2 CRDi</a></p><dl><div><dt>Год модели</dt><dd>2022</dd></div><div><dt>Мощность</dt><dd>202 л. с.</dd></div><div><dt>Двигатель</dt><dd>Дизель</dd></div></dl></div>
     <p class="catalog-price">≈ 3 600 000 ₽</p>
     <p class="catalog-card-description">Кроссовер поколения MQ4. Если нужен третий ряд, проверьте число мест и оснащение выбранной версии.</p>
     
@@ -484,8 +525,9 @@
 <article class="catalog-card" tabindex="-1" data-country="cn" data-model="Geely Emgrand" data-price="1250000">
   <img class="catalog-photo" src="assets/catalog/cn-geely-emgrand.webp" alt="Geely Emgrand у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
   <div class="catalog-card-body">
-    <p class="catalog-card-meta">Китай · 2023 · Седан</p>
+    <p class="catalog-card-meta">Китай · Седан</p>
     <h3>Geely Emgrand</h3>
+    <div class="catalog-specs"><p>Пример версии · <a href="https://gmgroup.msk.ru/en/used-cars/geely-emgrand-2023-pv4bob">1.5 93 кВт</a></p><dl><div><dt>Год модели</dt><dd>2023</dd></div><div><dt>Мощность</dt><dd>127 л. с.</dd></div><div><dt>Двигатель</dt><dd>Бензин</dd></div></dl></div>
     <p class="catalog-price">≈ 1 250 000 ₽</p>
     <p class="catalog-card-description">Седан с мотором 1.5 и вариатором для повседневных поездок. Уточните оснащение по выбранной версии.</p>
     
@@ -565,5 +607,37 @@
   </dialog>
 
   <div class="mobile-action"><a class="button button--gold" href="blog/index.html">Читать статьи</a></div>
+<dialog class="telegram-dialog" id="telegram-dialog" aria-labelledby="telegram-dialog-title">
+    <div class="telegram-panel">
+      <div class="telegram-panel-heading">
+        <h2 id="telegram-dialog-title">Связаться с «Дом Авто»</h2>
+        <form method="dialog">
+          <button class="button button--ink telegram-close" aria-label="Закрыть" autofocus>×</button>
+        </form>
+      </div>
+      <div class="telegram-channel">
+        <p>Telegram-канал «Дом Авто Оренбург»</p>
+        <a class="button button--gold" href="https://t.me/DomAvtoOrenburg">Открыть канал</a>
+      </div>
+      <ul class="telegram-managers" aria-label="Менеджеры">
+        <li><a class="telegram-person" href="https://t.me/al4_b">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Александр</strong>
+          <span class="telegram-person-handle">@al4_b</span>
+        </a></li>
+        <li><a class="telegram-person" href="https://t.me/msqrad">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Семен</strong>
+          <span class="telegram-person-handle">@msqrad</span>
+        </a></li>
+        <li><a class="telegram-person" href="https://t.me/Orenros">
+          <span class="telegram-person-action">Telegram</span>
+          <strong>Иван</strong>
+          <span class="telegram-person-handle">@Orenros</span>
+        </a></li>
+      </ul>
+    </div>
+  </dialog>
+  <script src="telegram.js" defer></script>
 </body>
 </html>
