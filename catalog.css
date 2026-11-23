@@ -26,8 +26,6 @@
 .catalog-heading { margin-block: 19px clamp(24px, 4vw, 42px); }
 .catalog-heading :is(h1, h2) { font-size: clamp(2.45rem, 6vw, 5.1rem); }
 .catalog-heading p { max-width: 640px; margin-top: 12px; color: var(--muted); }
-.catalog-home { display: inline-flex; align-items: center; min-height: 34px; color: var(--gold-bright); }
-.catalog-home:hover { text-decoration: underline; }
 .catalog-workspace { display: grid; grid-template-columns: 215px minmax(0, 1fr); gap: clamp(20px, 3.1vw, 44px); align-items: start; }
 .catalog-filters {
   position: sticky;
@@ -117,10 +115,12 @@
   .catalog-light::before { transform: none; transition: none; }
 }
 
-.catalog-specs { margin-block: 8px; padding-block: 8px; border-block: 1px solid var(--line); font-size: .86rem; }
+.catalog-specs { padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #182538; font-size: .9rem; }
+.catalog-specs h4 { margin: 0 0 4px; font-size: 1rem; color: var(--gold-bright); }
 .catalog-specs p { margin: 0 0 6px; }
 .catalog-specs a { text-decoration: underline; text-underline-offset: .16em; }
 .catalog-specs dl, .catalog-specs dd { margin: 0; }
 .catalog-specs dl > div { display: flex; justify-content: space-between; gap: 8px; }
 .catalog-specs dt { color: var(--muted); }
-.catalog-specs dd { text-align: right; }
+.catalog-specs dd { text-align: right; font-weight: 650; }
+.catalog-specs dl > div + div { margin-top: 4px; }
