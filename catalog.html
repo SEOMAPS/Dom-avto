@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090e17">
+  <meta name="description" content="40 моделей с фильтрами по стране, поиском и сортировкой по цене. Сравните автомобили и запросите расчёт под ключ до своего города.">
+  <title>Каталог авто из Китая, Кореи, Японии и Кыргызстана | Дом Авто</title>
+  <link rel="icon" href="assets/dom-icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="navigation.js" defer></script>
+  <link rel="stylesheet" href="catalog.css">
+  <script src="catalog.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Дом Авто">
+  <meta property="og:title" content="Каталог авто из Китая, Кореи, Японии и Кыргызстана | Дом Авто">
+  <meta property="og:description" content="40 моделей с фильтрами по стране, поиском и сортировкой по цене. Сравните автомобили и запросите расчёт под ключ до своего города.">
+  <script src="cookies.js" defer></script>
+</head>
+<body class="catalog-page">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-identity">
+        <a class="brand brand--lockup" href="index.html" aria-label="Дом Авто, на главную"><img class="brand-symbol" src="assets/dom-brand-symbol.webp" width="550" height="159" alt=""><span class="brand-type"><img class="brand-name" src="assets/dom-brand-name.webp" width="550" height="80" alt=""><span class="brand-tagline">Подбор и доставка под ключ</span></span></a>
+      </div>
+      <nav class="header-quick" aria-label="Быстрая навигация">
+        <a href="catalog.html" aria-current="page">Каталог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog/index.html">Статьи</a>
+        <a href="contacts.html">Канал проекта</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <div class="header-controls">
+        <a class="button button--gold header-contact" href="blog/index.html">Читать статьи</a>
+        <a class="menu-button" id="menu-toggle" href="#site-menu" role="button" aria-controls="site-menu" aria-label="Меню"><i aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </header>
+  <span id="menu-closed" aria-hidden="true"></span>
+  <div id="site-menu" role="dialog" aria-labelledby="menu-title">
+    <a class="menu-backdrop" href="#menu-closed" aria-hidden="true" tabindex="-1"></a>
+    <div class="menu-inner" id="menu-panel">
+      <div class="menu-top"><h2 id="menu-title">Меню</h2><a class="menu-close" href="#menu-closed" aria-label="Закрыть меню">×</a></div>
+      <nav aria-label="Разделы сайта">
+        <a class="menu-page-link" href="catalog.html" aria-current="page">Каталог</a>
+        <a class="menu-page-link" href="faq.html">FAQ</a>
+        <a class="menu-page-link" href="blog/index.html">Статьи</a>
+        <a class="menu-page-link" href="contacts.html">Канал проекта</a>
+        <a class="menu-page-link" href="about.html">О нас</a>
+        <a href="index.html#directions">Страны</a>
+        <a href="index.html#process">Как заказать</a>
+        <a href="index.html#cases">Примеры подбора</a>
+        <a href="index.html#advantages">Преимущества</a>
+      </nav>
+      <a class="button button--gold" href="blog/index.html">Читать статьи</a>
+    </div>
+  </div>
+  <main class="catalog-shell" id="main">
+  
+  <div class="catalog-light" aria-hidden="true"></div>
+  <div class="container catalog" data-catalog="page">
+    <a class="catalog-home" href="index.html">← На главную</a>
+    <div class="catalog-heading">
+      <h1 id="catalog-title">Каталог авто из-за рубежа</h1>
+      <p>Сравните 40 моделей из Китая, Южной Кореи, Японии и Кыргызстана по стране, году выпуска и ориентировочной стоимости. Суммы ориентировочные. Изображения служат иллюстрациями. <a href="blog/iz-chego-skladyvaetsya-cena-pod-klyuch.html" class="seo-text-link">Что входит в цену под ключ</a>.</p>
+    </div>
+    <div class="catalog-workspace">
+      <aside class="catalog-filters">
+        <fieldset>
+          <legend>Страна подбора</legend>
+          <div class="catalog-country-options"><label class="catalog-country"><input type="radio" name="catalog-country" value="" checked><span>Все страны<small>40</small></span></label><label class="catalog-country"><input type="radio" name="catalog-country" value="jp"><span>Япония<small>10</small></span></label><label class="catalog-country"><input type="radio" name="catalog-country" value="kg"><span>Кыргызстан<small>10</small></span></label><label class="catalog-country"><input type="radio" name="catalog-country" value="kr"><span>Южная Корея<small>10</small></span></label><label class="catalog-country"><input type="radio" name="catalog-country" value="cn"><span>Китай<small>10</small></span></label></div>
+        </fieldset>
+      </aside>
+      <div class="catalog-results">
+        <div class="catalog-toolbar">
+          <label for="catalog-search">Марка или модель
+            <input type="search" id="catalog-search" placeholder="Например, Toyota" autocomplete="off">
+          </label>
+          <label for="catalog-sort">Сортировка
+            <select id="catalog-sort">
+              <option value="">По умолчанию</option>
+              <option value="1">Сначала дешевле</option>
+              <option value="-1">Сначала дороже</option>
+            </select>
+          </label>
+        </div>
+        <div class="catalog-summary">
+          <p class="catalog-count" role="status">40 моделей</p>
+          <button class="catalog-reset" type="button" hidden>Сбросить</button>
+        </div>
+        <p class="catalog-empty" hidden>По этим фильтрам ничего не найдено. Попробуйте другую модель или страну.</p>
+        <div class="catalog-grid">
+          <article class="catalog-card" tabindex="-1" data-country="jp" data-model="Honda Vezel" data-price="1660000">
+  <img class="catalog-photo" src="assets/catalog/jp-honda-vezel.webp" alt="Honda Vezel у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <h3>Honda Vezel</h3>
+    <p class="catalog-price">≈ 1 660 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер поколения RV из Японии. Сравните бензиновую и гибридную версии по приводу, пробегу и оснащению.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota RAV4" data-price="4510000">
+  <img class="catalog-photo" src="assets/catalog/kg-toyota-rav4.webp" alt="Toyota RAV4 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2026 · Кроссовер</p>
+    <h3>Toyota RAV4</h3>
+    <p class="catalog-price">≈ 4 510 000 ₽</p>
+    <p class="catalog-card-description">Пятиместный кроссовер. При выборе сравните двигатель, привод и комплектацию конкретного RAV4.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia K3" data-price="1990000">
+  <img class="catalog-photo" src="assets/catalog/kr-kia-k3.webp" alt="Kia K3 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <h3>Kia K3</h3>
+    <p class="catalog-price">≈ 1 990 000 ₽</p>
+    <p class="catalog-card-description">Компактный седан с отдельным багажником. Для ежедневных поездок сравните оснащение салона и состояние машины.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Jetta VS7" data-price="1730000">
+  <img class="catalog-photo" src="assets/catalog/cn-jetta-vs7.webp" alt="Jetta VS7 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <h3>Jetta VS7</h3>
+    <p class="catalog-price">≈ 1 730 000 ₽</p>
+    <p class="catalog-card-description">Пятиместный кроссовер с мотором 1.4 Turbo и автоматом. Если машина нужна для семьи, посмотрите, сколько места на втором ряду.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Nissan Note" data-price="1190000">
+  <img class="catalog-photo" src="assets/catalog/jp-nissan-note.webp" alt="Nissan Note у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <h3>Nissan Note</h3>
+    <p class="catalog-price">≈ 1 190 000 ₽</p>
+    <p class="catalog-card-description">Городской хэтчбек E13 с гибридной установкой e-POWER. Уточните оснащение и пробег выбранного Note.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Honda CR-V" data-price="4350000">
+  <img class="catalog-photo" src="assets/catalog/kg-honda-cr-v.webp" alt="Honda CR-V у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2026 · Кроссовер</p>
+    <h3>Honda CR-V</h3>
+    <p class="catalog-price">≈ 4 350 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер шестого поколения. В расчёте версия с мотором 1.5 Turbo и просторным вторым рядом.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Sportage" data-price="2600000">
+  <img class="catalog-photo" src="assets/catalog/kr-kia-sportage.webp" alt="Kia Sportage у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <h3>Kia Sportage</h3>
+    <p class="catalog-price">≈ 2 600 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер пятого поколения с вместительным вторым рядом. Перед выбором сравните привод и оснащение.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Toyota Yaris L" data-price="1520000">
+  <img class="catalog-photo" src="assets/catalog/cn-toyota-yaris-l.webp" alt="Toyota Yaris L у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2022 · Хэтчбек</p>
+    <h3>Toyota Yaris L</h3>
+    <p class="catalog-price">≈ 1 520 000 ₽</p>
+    <p class="catalog-card-description">Компактный автомобиль с мотором 1.5 и вариатором. Подходит для поиска машины на ежедневные городские поездки.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Yaris Cross" data-price="1650000">
+  <img class="catalog-photo" src="assets/catalog/jp-toyota-yaris-cross.webp" alt="Toyota Yaris Cross у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <h3>Toyota Yaris Cross</h3>
+    <p class="catalog-price">≈ 1 650 000 ₽</p>
+    <p class="catalog-card-description">Компактный кроссовер на базе Yaris. Можно сравнить бензиновый и гибридный варианты.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Audi A5L Sportback" data-price="6390000">
+  <img class="catalog-photo" src="assets/catalog/kg-audi-a5l-sportback.webp" alt="Audi A5L Sportback у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2026 · Лифтбек</p>
+    <h3>Audi A5L Sportback</h3>
+    <p class="catalog-price">≈ 6 390 000 ₽</p>
+    <p class="catalog-card-description">Длиннобазный лифтбек китайского рынка с мотором 2.0 Turbo. Уточните нужные опции по выбранной комплектации.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia K5" data-price="2370000">
+  <img class="catalog-photo" src="assets/catalog/kr-kia-k5.webp" alt="Kia K5 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <h3>Kia K5</h3>
+    <p class="catalog-price">≈ 2 370 000 ₽</p>
+    <p class="catalog-card-description">Среднеразмерный седан с мотором 2.0 и автоматом. При подборе обратите внимание на состояние кузова и оснащение салона.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Chevrolet Monza" data-price="1460000">
+  <img class="catalog-photo" src="assets/catalog/cn-chevrolet-monza.webp" alt="Chevrolet Monza у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Седан</p>
+    <h3>Chevrolet Monza</h3>
+    <p class="catalog-price">≈ 1 460 000 ₽</p>
+    <p class="catalog-card-description">Седан с атмосферным мотором 1.5 и автоматом. Спокойный вариант для повседневных поездок.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Aqua" data-price="1270000">
+  <img class="catalog-photo" src="assets/catalog/jp-toyota-aqua.webp" alt="Toyota Aqua у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <h3>Toyota Aqua</h3>
+    <p class="catalog-price">≈ 1 270 000 ₽</p>
+    <p class="catalog-card-description">Пятидверный гибридный хэтчбек второго поколения. Уточните пробег, комплектацию и доступные материалы осмотра.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota Camry" data-price="4320000">
+  <img class="catalog-photo" src="assets/catalog/kg-toyota-camry.webp" alt="Toyota Camry у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2025 · Седан</p>
+    <h3>Toyota Camry</h3>
+    <p class="catalog-price">≈ 4 320 000 ₽</p>
+    <p class="catalog-card-description">Седан XV80 с просторным задним рядом. Можно сравнить гибридные комплектации по оснащению и цене.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Kona" data-price="2180000">
+  <img class="catalog-photo" src="assets/catalog/kr-hyundai-kona.webp" alt="Hyundai Kona у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <h3>Hyundai Kona</h3>
+    <p class="catalog-price">≈ 2 180 000 ₽</p>
+    <p class="catalog-card-description">Компактный кроссовер первого поколения после рестайлинга. В карточке вариант с мотором 2.0 и вариатором.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Haval Chitu" data-price="1590000">
+  <img class="catalog-photo" src="assets/catalog/cn-haval-chitu.webp" alt="Haval Chitu у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <h3>Haval Chitu</h3>
+    <p class="catalog-price">≈ 1 590 000 ₽</p>
+    <p class="catalog-card-description">Компактный кроссовер с мотором 1.5 Turbo и коробкой DCT. Уточните комплектацию по конкретному автомобилю.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Toyota Corolla Fielder" data-price="1310000">
+  <img class="catalog-photo" src="assets/catalog/jp-toyota-corolla-fielder.webp" alt="Toyota Corolla Fielder у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2021 · Универсал</p>
+    <h3>Toyota Corolla Fielder</h3>
+    <p class="catalog-price">≈ 1 310 000 ₽</p>
+    <p class="catalog-card-description">Универсал с длинным багажным отделением. Рассмотрите гибридные версии, если важны и расход, и место для вещей.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Volkswagen Tiguan L Pro" data-price="4920000">
+  <img class="catalog-photo" src="assets/catalog/kg-volkswagen-tiguan-l-pro.webp" alt="Volkswagen Tiguan L Pro у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <h3>Volkswagen Tiguan L Pro</h3>
+    <p class="catalog-price">≈ 4 920 000 ₽</p>
+    <p class="catalog-card-description">Длиннобазный Tiguan китайского рынка. Расчёт относится к версии с двигателем 2.0 Turbo.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Venue" data-price="1750000">
+  <img class="catalog-photo" src="assets/catalog/kr-hyundai-venue.webp" alt="Hyundai Venue у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <h3>Hyundai Venue</h3>
+    <p class="catalog-price">≈ 1 750 000 ₽</p>
+    <p class="catalog-card-description">Городской кроссовер с мотором 1.6 и вариатором. Уточните пробег, комплектацию и нужные опции.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Škoda Karoq" data-price="2160000">
+  <img class="catalog-photo" src="assets/catalog/cn-skoda-karoq.webp" alt="Škoda Karoq у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <h3>Škoda Karoq</h3>
+    <p class="catalog-price">≈ 2 160 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер с мотором 1.4 Turbo и DSG. При выборе оцените посадку, багажник и оснащение салона.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Honda Freed" data-price="1460000">
+  <img class="catalog-photo" src="assets/catalog/jp-honda-freed.webp" alt="Honda Freed у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2021 · Минивэн</p>
+    <h3>Honda Freed</h3>
+    <p class="catalog-price">≈ 1 460 000 ₽</p>
+    <p class="catalog-card-description">Компактный минивэн со сдвижными дверями. Для семейных поездок стоит проверить конфигурацию сидений и место для багажа.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Škoda Kodiaq" data-price="4490000">
+  <img class="catalog-photo" src="assets/catalog/kg-skoda-kodiaq.webp" alt="Škoda Kodiaq у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <h3>Škoda Kodiaq</h3>
+    <p class="catalog-price">≈ 4 490 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер второго поколения. Если нужен третий ряд, проверьте комплектации с подходящей конфигурацией салона.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Casper" data-price="1630000">
+  <img class="catalog-photo" src="assets/catalog/kr-hyundai-casper.webp" alt="Hyundai Casper у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <h3>Hyundai Casper</h3>
+    <p class="catalog-price">≈ 1 630 000 ₽</p>
+    <p class="catalog-card-description">Компактная модель с высокой посадкой и литровым турбомотором. Подходит для поиска небольшого автомобиля для города.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Volkswagen Tayron" data-price="2170000">
+  <img class="catalog-photo" src="assets/catalog/cn-volkswagen-tayron.webp" alt="Volkswagen Tayron у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <h3>Volkswagen Tayron</h3>
+    <p class="catalog-price">≈ 2 170 000 ₽</p>
+    <p class="catalog-card-description">Пятиместный кроссовер первого поколения. В расчёте версия с двигателем 1.4 Turbo и коробкой DCT.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Suzuki Swift" data-price="1170000">
+  <img class="catalog-photo" src="assets/catalog/jp-suzuki-swift.webp" alt="Suzuki Swift у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Хэтчбек</p>
+    <h3>Suzuki Swift</h3>
+    <p class="catalog-price">≈ 1 170 000 ₽</p>
+    <p class="catalog-card-description">Городской хэтчбек с коротким кузовом. При выборе сравните пробег и оснащение выбранных машин.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Hyundai Santa Fe" data-price="5050000">
+  <img class="catalog-photo" src="assets/catalog/kg-hyundai-santa-fe.webp" alt="Hyundai Santa Fe у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2025 · Кроссовер</p>
+    <h3>Hyundai Santa Fe</h3>
+    <p class="catalog-price">≈ 5 050 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер поколения MX5 с высоким кузовом и широким багажником. Оцените конфигурацию салона под свои поездки.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Elantra" data-price="2110000">
+  <img class="catalog-photo" src="assets/catalog/kr-hyundai-elantra.webp" alt="Hyundai Elantra у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Седан</p>
+    <h3>Hyundai Elantra</h3>
+    <p class="catalog-price">≈ 2 110 000 ₽</p>
+    <p class="catalog-card-description">Седан поколения CN7. По корейским объявлениям модель можно найти под названием Hyundai Avante.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Mazda CX-5" data-price="2350000">
+  <img class="catalog-photo" src="assets/catalog/cn-mazda-cx-5.webp" alt="Mazda CX-5 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2024 · Кроссовер</p>
+    <h3>Mazda CX-5</h3>
+    <p class="catalog-price">≈ 2 350 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер с атмосферным бензиновым мотором 2.0 и автоматом. Уточните привод, оснащение и состояние кузова.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Subaru Forester" data-price="3100000">
+  <img class="catalog-photo" src="assets/catalog/jp-subaru-forester.webp" alt="Subaru Forester у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <h3>Subaru Forester</h3>
+    <p class="catalog-price">≈ 3 100 000 ₽</p>
+    <p class="catalog-card-description">Forester поколения SK с полным приводом и высокой посадкой. При выборе сравните комплектации и историю машины.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Toyota Highlander" data-price="5200000">
+  <img class="catalog-photo" src="assets/catalog/kg-toyota-highlander.webp" alt="Toyota Highlander у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <h3>Toyota Highlander</h3>
+    <p class="catalog-price">≈ 5 200 000 ₽</p>
+    <p class="catalog-card-description">Семейный кроссовер XU70 с тремя рядами. Перед подбором стоит оценить место для багажа при поднятом третьем ряду.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Seltos" data-price="2250000">
+  <img class="catalog-photo" src="assets/catalog/kr-kia-seltos.webp" alt="Kia Seltos у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <h3>Kia Seltos</h3>
+    <p class="catalog-price">≈ 2 250 000 ₽</p>
+    <p class="catalog-card-description">Компактный кроссовер после рестайлинга. Сравните версии по приводу, камерам и оснащению салона.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Volkswagen Golf" data-price="2120000">
+  <img class="catalog-photo" src="assets/catalog/cn-volkswagen-golf.webp" alt="Volkswagen Golf у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Хэтчбек</p>
+    <h3>Volkswagen Golf</h3>
+    <p class="catalog-price">≈ 2 120 000 ₽</p>
+    <p class="catalog-card-description">Пятидверный Golf восьмого поколения. В расчёте версия с двигателем 1.4 Turbo и DSG.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Mazda CX-30" data-price="1950000">
+  <img class="catalog-photo" src="assets/catalog/jp-mazda-cx-30.webp" alt="Mazda CX-30 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Кроссовер</p>
+    <h3>Mazda CX-30</h3>
+    <p class="catalog-price">≈ 1 950 000 ₽</p>
+    <p class="catalog-card-description">Компактный кроссовер с низкой линией крыши. Если машина нужна семье, при выборе полезно оценить задний ряд и багажник.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Lexus NX 250" data-price="5750000">
+  <img class="catalog-photo" src="assets/catalog/kg-lexus-nx-250.webp" alt="Lexus NX 250 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <h3>Lexus NX 250</h3>
+    <p class="catalog-price">≈ 5 750 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер второго поколения с атмосферным мотором 2.5. По выбранному авто сверьте привод и опции.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Hyundai Tucson" data-price="2770000">
+  <img class="catalog-photo" src="assets/catalog/kr-hyundai-tucson.webp" alt="Hyundai Tucson у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2023 · Кроссовер</p>
+    <h3>Hyundai Tucson</h3>
+    <p class="catalog-price">≈ 2 770 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер поколения NX4 с широким багажным проёмом и просторным вторым рядом. Уточните конкретную комплектацию.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Audi Q3" data-price="2240000">
+  <img class="catalog-photo" src="assets/catalog/cn-audi-q3.webp" alt="Audi Q3 у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Кроссовер</p>
+    <h3>Audi Q3</h3>
+    <p class="catalog-price">≈ 2 240 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер поколения F3 с мотором 1.4 Turbo и коробкой DCT. При выборе сравните оснащение и состояние машины.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="jp" data-model="Suzuki Jimny Sierra" data-price="1920000">
+  <img class="catalog-photo" src="assets/catalog/jp-suzuki-jimny-sierra.webp" alt="Suzuki Jimny Sierra у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Япония · 2022 · Внедорожник</p>
+    <h3>Suzuki Jimny Sierra</h3>
+    <p class="catalog-price">≈ 1 920 000 ₽</p>
+    <p class="catalog-card-description">Трёхдверный рамный внедорожник с мотором 1.5 и подключаемым полным приводом. Уточните состояние конкретной машины.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kg" data-model="Geely Monjaro" data-price="3950000">
+  <img class="catalog-photo" src="assets/catalog/kg-geely-monjaro.webp" alt="Geely Monjaro у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Кыргызстан · 2024 · Кроссовер</p>
+    <h3>Geely Monjaro</h3>
+    <p class="catalog-price">≈ 3 950 000 ₽</p>
+    <p class="catalog-card-description">Среднеразмерный кроссовер с мотором 2.0 Turbo и автоматом. Перед выбором сравните опции и состояние.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="kr" data-model="Kia Sorento" data-price="3600000">
+  <img class="catalog-photo" src="assets/catalog/kr-kia-sorento.webp" alt="Kia Sorento у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Южная Корея · 2022 · Кроссовер</p>
+    <h3>Kia Sorento</h3>
+    <p class="catalog-price">≈ 3 600 000 ₽</p>
+    <p class="catalog-card-description">Кроссовер поколения MQ4. Если нужен третий ряд, проверьте число мест и оснащение выбранной версии.</p>
+    
+  </div>
+</article>
+<article class="catalog-card" tabindex="-1" data-country="cn" data-model="Geely Emgrand" data-price="1250000">
+  <img class="catalog-photo" src="assets/catalog/cn-geely-emgrand.webp" alt="Geely Emgrand у вывески «Дом Авто»" width="720" height="539" loading="lazy" decoding="async">
+  <div class="catalog-card-body">
+    <p class="catalog-card-meta">Китай · 2023 · Седан</p>
+    <h3>Geely Emgrand</h3>
+    <p class="catalog-price">≈ 1 250 000 ₽</p>
+    <p class="catalog-card-description">Седан с мотором 1.5 и вариатором для повседневных поездок. Уточните оснащение по выбранной версии.</p>
+    
+  </div>
+</article>
+        </div>
+        <button class="button button--ink catalog-more" type="button" hidden>Показать ещё</button>
+      </div>
+    </div>
+  </div>
+</main>
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="site-footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--lockup" href="index.html" aria-label="Дом Авто, на главную"><img class="brand-symbol" src="assets/dom-brand-symbol.webp" width="550" height="159" alt=""><span class="brand-type"><img class="brand-name" src="assets/dom-brand-name.webp" width="550" height="80" alt=""></span></a>
+          <p>Автомобили из-за рубежа<br>Оренбург</p>
+        </div>
+        <nav class="footer-group" aria-labelledby="footer-navigation-title">
+          <h2 id="footer-navigation-title">Быстрые ссылки</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="blog/index.html">Статьи</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contacts.html">Канал проекта</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-group" id="footer-contacts" aria-labelledby="footer-contacts-title">
+          <h2 id="footer-contacts-title">Канал проекта</h2>
+          <ul>
+            <li><a href="https://t.me/DomAvtoOrenburg" rel="noreferrer">Канал «Дом Авто Оренбург»</a></li>
+
+
+
+          </ul>
+        </nav>
+        <nav class="footer-group footer-docs" aria-labelledby="footer-docs-title">
+          <h2 id="footer-docs-title">Документы</h2>
+          <ul>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            <li><a href="cookies.html">Политика использования cookie</a></li>
+            <li><a href="terms.html">Условия использования сайта</a></li>
+            <li><a href="cookies.html" data-cookie-open aria-haspopup="dialog">Настройки cookie</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© Дом Авто</p>
+      </div>
+    </div>
+  </footer>
+  <aside class="cookie-banner" data-cookie-banner aria-labelledby="cookie-banner-title" hidden>
+    <h2 id="cookie-banner-title">Файлы cookie</h2>
+    <p>На сайте нет аналитических и рекламных cookie. Мы сохраняем ваш выбор в браузере.</p>
+    <p class="cookie-links"><a href="cookies.html">Политика использования cookie</a><a href="privacy.html">Политика конфиденциальности</a></p>
+    <div class="cookie-actions">
+      <button class="button button--ink" type="button" data-cookie-choice="necessary">Принять обязательные</button>
+      <button class="button button--ink" type="button" data-cookie-choice="all">Принять</button>
+      <button class="button button--ink" type="button" data-cookie-choice="rejected">Отклонить</button>
+    </div>
+  </aside>
+  <dialog class="cookie-dialog" data-cookie-dialog aria-labelledby="cookie-dialog-title" aria-describedby="cookie-dialog-description">
+    <div class="cookie-dialog-head">
+      <h2 id="cookie-dialog-title">Настройки cookie</h2>
+      <form method="dialog"><button class="button button--ink cookie-close" aria-label="Закрыть настройки" autofocus>×</button></form>
+    </div>
+    <p id="cookie-dialog-description">На сайте нет аналитических и рекламных cookie. Мы сохраняем ваш выбор в браузере.</p>
+    <p class="cookie-links"><a href="cookies.html" data-cookie-policy-link>Политика использования cookie</a><a href="privacy.html" data-cookie-policy-link>Политика конфиденциальности</a></p>
+    <p data-cookie-status></p>
+    <div class="cookie-actions">
+      <button class="button button--ink" type="button" data-cookie-choice="necessary">Принять обязательные</button>
+      <button class="button button--ink" type="button" data-cookie-choice="all">Принять</button>
+      <button class="button button--ink" type="button" data-cookie-choice="rejected">Отклонить</button>
+    </div>
+  </dialog>
+
+  <div class="mobile-action"><a class="button button--gold" href="blog/index.html">Читать статьи</a></div>
+</body>
+</html>
