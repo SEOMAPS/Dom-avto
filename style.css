@@ -1394,4 +1394,9 @@ html:has(.telegram-dialog[open]) { overflow: hidden; }
 .telegram-person strong { margin-top: 3px; font-size: clamp(.72rem, 3vw, .93rem); line-height: 1.2; }
 .telegram-person-handle { color: var(--muted); font-size: .74rem; line-height: 1.2; }
 
-.hero-route .route-contact { display: flex; justify-content: center; padding: 0 12px 12px; }
+.route-with-contact { width: 100%; display: grid; justify-items: end; gap: 12px; }
+.route-with-contact > .button { width: min(100%, 424px); }
+@media (max-width: 920px) {
+  .route-with-contact:has(.hero-route) { justify-items: start; }
+  .route-with-contact > .button { width: auto; justify-self: start; }
+}
