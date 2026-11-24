@@ -1168,7 +1168,11 @@ html::-webkit-scrollbar, .menu-inner::-webkit-scrollbar { display: none; }
 .hero-route .route-country-link:hover text,
 .hero-route .route-country-link:focus-visible text { fill: #fff4dc; }
 
-.process .steps img { aspect-ratio: 16 / 9; object-position: center; }
+.process .steps > li { display: flex; flex-direction: column; }
+.process .steps img { aspect-ratio: 16 / 9; object-position: center; flex-shrink: 0; }
+.process .step-copy { display: flex; flex: 1; flex-direction: column; align-self: stretch; }
+.process .step-duration { align-self: flex-end; margin-top: auto; padding-top: 20px; color: var(--gold-bright); font-size: .875rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.process-timing-note { margin-top: 18px; max-width: 78ch; color: var(--muted); font-size: .875rem; line-height: 1.6; }
 @media (min-width: 1091px) {
   .process .steps { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   .process .steps > li { grid-column: span 3; }
