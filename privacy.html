@@ -14,7 +14,23 @@
   <meta property="og:site_name" content="Дом Авто">
   <meta property="og:title" content="Политика конфиденциальности | Дом Авто">
   <meta property="og:description" content="Какие данные могут обрабатываться при посещении информационного сайта «Дом Авто».">
-  <script src="cookies.js" defer></script>
+  <!-- Analytics is activated by cookies.js only after consent. -->
+  <template data-yandex-metrika>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114648000', 'ym');
+    
+        ym(114648000, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/114648000" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </template>
+  <script src="cookies.js?v=metrika1" defer></script>
 </head>
 <body>
   <div class="road-backdrop" aria-hidden="true">
@@ -72,12 +88,18 @@
 <div class="policy-content">
   <section>
     <h2>Посещение сайта</h2>
-    <p>На сайте можно читать материалы и смотреть каталог без регистрации. Сайт не принимает заявки, оплату и сообщения. В этой версии нет счётчиков посещений, рекламных скриптов и встроенных виджетов Telegram.</p>
+    <p>На сайте можно читать материалы и смотреть каталог без регистрации. Сайт не принимает заявки, оплату и сообщения. Яндекс.Метрика подключается после согласия на аналитику. Встроенных виджетов Telegram нет.</p>
     <p>При загрузке страниц хостинг получает технические данные запроса, включая IP-адрес. В зависимости от настроек хостинга эти сведения могут попадать в журналы вместе со временем запроса, адресом страницы и данными браузера. Порядок и сроки ведения журналов зависят от выбранного хостинга.</p>
   </section>
   <section>
     <h2>Настройки в браузере</h2>
     <p>Выбор в баннере cookie сохраняется на вашем устройстве. Сайт не отправляет его на сервер. Срок хранения и порядок изменения выбора описаны в <a href="cookies.html">политике использования cookie</a>.</p>
+  </section>
+  <section>
+    <h2>Яндекс.Метрика</h2>
+    <p>После выбора «Принять всё» включается счётчик Яндекс.Метрики № 114648000. Он помогает анализировать посещения, источники переходов, просмотренные страницы и действия на сайте. При работе сервиса Яндекс получает технические данные, включая IP-адрес и сведения о браузере и устройстве, и может сохранять аналитические cookie.</p>
+    <p>В счётчике включён Вебвизор: он записывает действия на страницах, в том числе клики и прокрутку, чтобы оценивать удобство сайта. Условия обработки данных описаны в <a href="https://yandex.ru/legal/confidential/" rel="noreferrer">политике конфиденциальности Яндекса</a>.</p>
+    <p>При выборе «Принять обязательные» или «Отклонить» счётчик не запускается. Изменить выбор и отозвать согласие можно через <a href="cookies.html" data-cookie-open aria-haspopup="dialog">«Настройки cookie»</a> в подвале сайта.</p>
   </section>
   <section>
     <h2>Яндекс Карты</h2>
@@ -135,11 +157,11 @@
   </footer>
   <aside class="cookie-banner" data-cookie-banner aria-labelledby="cookie-banner-title" hidden>
     <h2 id="cookie-banner-title">Файлы cookie</h2>
-    <p>На сайте нет аналитических и рекламных cookie. Мы сохраняем ваш выбор в браузере.</p>
+    <p>Для анализа посещений используем Яндекс.Метрику, включая Вебвизор. Она включится только после вашего согласия.</p>
     <p class="cookie-links"><a href="cookies.html">Политика использования cookie</a><a href="privacy.html">Политика конфиденциальности</a></p>
     <div class="cookie-actions">
       <button class="button button--ink" type="button" data-cookie-choice="necessary">Принять обязательные</button>
-      <button class="button button--ink" type="button" data-cookie-choice="all">Принять</button>
+      <button class="button button--ink" type="button" data-cookie-choice="all">Принять всё</button>
       <button class="button button--ink" type="button" data-cookie-choice="rejected">Отклонить</button>
     </div>
   </aside>
@@ -148,12 +170,12 @@
       <h2 id="cookie-dialog-title">Настройки cookie</h2>
       <form method="dialog"><button class="button button--ink cookie-close" aria-label="Закрыть настройки" autofocus>×</button></form>
     </div>
-    <p id="cookie-dialog-description">На сайте нет аналитических и рекламных cookie. Мы сохраняем ваш выбор в браузере.</p>
+    <p id="cookie-dialog-description">Для анализа посещений используем Яндекс.Метрику, включая Вебвизор. Она включится только после вашего согласия.</p>
     <p class="cookie-links"><a href="cookies.html" data-cookie-policy-link>Политика использования cookie</a><a href="privacy.html" data-cookie-policy-link>Политика конфиденциальности</a></p>
     <p data-cookie-status></p>
     <div class="cookie-actions">
       <button class="button button--ink" type="button" data-cookie-choice="necessary">Принять обязательные</button>
-      <button class="button button--ink" type="button" data-cookie-choice="all">Принять</button>
+      <button class="button button--ink" type="button" data-cookie-choice="all">Принять всё</button>
       <button class="button button--ink" type="button" data-cookie-choice="rejected">Отклонить</button>
     </div>
   </dialog>
