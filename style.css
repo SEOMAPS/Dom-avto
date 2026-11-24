@@ -1423,4 +1423,3 @@ html:has(.telegram-dialog[open]) { overflow: hidden; }
 .meeting-map h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .meeting-map address { font-style: normal; }
 .meeting-map iframe { width: 100%; height: clamp(260px, 40vw, 400px); border: 1px solid var(--line); border-radius: var(--radius); }
-.meeting-map [hidden] { display: none; }
