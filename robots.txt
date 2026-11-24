@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://domavto56.ru/sitemap.xml
