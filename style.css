@@ -1418,3 +1418,9 @@ html:has(.telegram-dialog[open]) { overflow: hidden; }
   .site-header .brand--lockup { grid-template-columns: 92px; }
   .site-header .brand-symbol { display: none; }
 }
+
+.meeting-map { margin-top: clamp(24px, 4vw, 48px); display: grid; justify-items: start; gap: 12px; }
+.meeting-map h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.meeting-map address { font-style: normal; }
+.meeting-map iframe { width: 100%; height: clamp(260px, 40vw, 400px); border: 1px solid var(--line); border-radius: var(--radius); }
+.meeting-map [hidden] { display: none; }

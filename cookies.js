@@ -27,8 +27,27 @@
   let preference = readPreference();
   banner.hidden = preference !== null;
 
+  const map = document.getElementById('meeting-map-frame');
+  const showMap = document.querySelector('[data-show-map]');
+  function displayMap(visible) {
+    if (!map || !showMap) return;
+    if (visible && !map.hasAttribute('src')) map.src = map.dataset.src;
+    if (!visible) map.removeAttribute('src');
+    map.hidden = !visible;
+    showMap.hidden = visible;
+  }
+
+  showMap?.addEventListener('click', (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    displayMap(true);
+    map.focus();
+  });
+  displayMap(preference === 'all');
+
   function rememberPreference(choice) {
     preference = choice;
+    displayMap(choice === 'all');
     try {
       localStorage.setItem(key, JSON.stringify({ choice, expiresAt: Date.now() + lifetime }));
     } catch {
